@@ -172,7 +172,7 @@ client.connect(err => {
 })
 
 app.get('/', (req, res) => {
-  res.send('Hello Doctors')
+  res.send('Hello StyleHut')
 })
 
 app.listen(port)
