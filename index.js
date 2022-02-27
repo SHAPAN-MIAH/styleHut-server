@@ -22,9 +22,6 @@ client.connect(err => {
   const womenShoesCollection = client.db("StyleHut").collection("WomenShoes");
   const MenJacketCollection = client.db("StyleHut").collection("MenJacketCollection");
   
-  app.get('/', (req, res) => {
-    res.send('Hello Doctors')
-  })
 
   // Product get and post api....
 
@@ -172,6 +169,10 @@ client.connect(err => {
     })
   })
 
+})
+
+app.get('/', (req, res) => {
+  res.send('Hello Doctors')
 })
 
 app.listen(port)
